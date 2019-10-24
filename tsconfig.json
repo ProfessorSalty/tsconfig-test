@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es6",
+        "jsx": "react",
+        "lib":[
+            "dom",
+            "dom.iterable",
+            "es2016.array.include",
+            "es2017",
+            "scripthost"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "project/*": [
+                "project/project/frontend/src/modules/*"
+            ],
+            "*": [
+                "deps/node_modules/*",
+                "deps/node_modules/@types/*"
+            ]
+        }
+    },
+    "exclude": [
+        "./deps/node_modules"
+    ]
+}
